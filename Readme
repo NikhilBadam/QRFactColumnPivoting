@@ -1,0 +1,5 @@
+g++ gen.c -o gen 
+g++ -fopenmp QR.cpp -o QR
+./gen <Matrix_dimension_size> > input
+./QR -n <No_of_thread_to_use> -file input
+rm gen input QR
